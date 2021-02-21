@@ -1,7 +1,6 @@
 import React from "react";
 import GoogleMapReact from 'google-map-react';
 
-import "./Map.scss";
 import Marker from "./components/Marker.component";
 
 const Map: React.FC = () => {

@@ -1,17 +1,20 @@
 @import "./src/styles/colorVariables";
 
 input[type=search] {
-  border: 1px solid $colorBrandy;
+  border: 2px solid $colorBrandy;
   border-radius: 10px;
   color: $colorShark;
   background-color: $colorBrandy;
   margin-bottom: 20px;
+  padding: 5px 5px 5px 10px;
+  transition: border .25s ease-out;
 
   &::placeholder {
     color: $colorShark;
   }
 
   &:focus {
-    border: 1px solid $colorShark;
+    outline: none;
+    border: 2px solid $colorWhite;
   }
 }
