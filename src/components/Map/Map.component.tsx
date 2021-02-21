@@ -1,8 +1,13 @@
 import React from "react";
 
-const Map = () => {
+import "./Map.scss";
+
+const Map: React.FC = () => {
     return (
-        <div>test</div>
+        <>
+            <input id="car-filter" type="search" placeholder="Filter cars..." />
+            <div>Here will be map</div>
+        </>
     );
 }
 

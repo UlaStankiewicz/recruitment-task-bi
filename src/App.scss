@@ -1,0 +1,37 @@
+$rowGap: 15px;
+$contentMargin: 50px;
+$headerRowHeight: 80px;
+$footerRowHeight: 30px;
+
+.header-item {
+    grid-area: header;
+}
+
+.header-item {
+    grid-area: header;
+}
+
+.main-item {
+    grid-area: main;
+    display: flex;
+    height: 100%;
+}
+
+.footer-item {
+    grid-area: footer;
+}
+
+.grid-container {
+    display: grid;
+    justify-items: stretch;
+    align-items: center;
+    grid-template-rows:
+            $headerRowHeight calc(100vh - (#{$headerRowHeight} + #{$footerRowHeight} + #{$rowGap} * 2
+            + #{$contentMargin})) $footerRowHeight;
+    grid-template-areas:
+    "header"
+    "main"
+    "footer";
+    row-gap: $rowGap;
+    margin: $contentMargin $contentMargin 0;
+}

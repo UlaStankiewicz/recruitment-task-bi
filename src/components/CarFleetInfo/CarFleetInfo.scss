@@ -1,0 +1,14 @@
+@import "./src/styles/colorVariables";
+
+table {
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid $colorBrandy;
+}
+
+tr:nth-child(even) {
+    background-color: $colorBrandy;
+    color: $colorShark;
+}

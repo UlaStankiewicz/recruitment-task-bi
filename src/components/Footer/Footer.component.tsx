@@ -1,9 +1,14 @@
 import React from "react";
 
-const Footer = () => {
+import "./Footer.scss";
+import FooterProps from "./FooterProps";
+
+const Footer: React.FC<FooterProps> = props => {
+    const { customClassName } = props;
+
     return (
-        <footer className="footer">
-            Created with all power by Monika Opawska.
+        <footer className={`footer ${customClassName}`}>
+            Created with all power by Monika Opawska
         </footer>
     );
 }

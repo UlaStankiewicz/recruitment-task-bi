@@ -1,23 +1,26 @@
 import React from 'react';
 
+import "./App.scss";
 import Map from "./components/Map/Map.component";
 import CarFleetInfo from "./components/CarFleetInfo/CarFleetInfo.component";
 import Footer from "./components/Footer/Footer.component";
 
-function App() {
+const App: React.FC = () => {
     return (
-        <>
-            <header>
+        <div className="grid-container">
+            <header className="header-item">
                 <h1>High-performance map updates of a fleet of cars in an organization</h1>
             </header>
-            <section>
-                <Map/>
-            </section>
-            <aside>
-                <CarFleetInfo/>
-            </aside>
-            <Footer/>
-        </>
+            <main className="main-item">
+                <section className="section-1">
+                    <Map/>
+                </section>
+                <aside className="aside-1">
+                    <CarFleetInfo/>
+                </aside>
+            </main>
+            <Footer customClassName="footer-item"/>
+        </div>
     );
 }
 
