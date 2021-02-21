@@ -1,5 +1,5 @@
 interface MarkerProps {
-    name?: string,
+    name?: number,
     lat: number,
     lng: number,
 }
