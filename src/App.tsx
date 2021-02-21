@@ -1,24 +1,24 @@
 import React from 'react';
-import './App.css';
+
+import Map from "./components/Map/Map.component";
+import CarFleetInfo from "./components/CarFleetInfo/CarFleetInfo.component";
+import Footer from "./components/Footer/Footer.component";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <>
+            <header>
+                <h1>High-performance map updates of a fleet of cars in an organization</h1>
+            </header>
+            <section>
+                <Map/>
+            </section>
+            <aside>
+                <CarFleetInfo/>
+            </aside>
+            <Footer/>
+        </>
+    );
 }
 
 export default App;
