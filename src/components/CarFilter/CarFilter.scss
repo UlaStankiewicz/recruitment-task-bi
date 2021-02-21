@@ -1,0 +1,17 @@
+@import "./src/styles/colorVariables";
+
+input[type=search] {
+  border: 1px solid $colorBrandy;
+  border-radius: 10px;
+  color: $colorShark;
+  background-color: $colorBrandy;
+  margin-bottom: 20px;
+
+  &::placeholder {
+    color: $colorShark;
+  }
+
+  &:focus {
+    border: 1px solid $colorShark;
+  }
+}
